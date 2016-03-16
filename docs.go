@@ -15,7 +15,7 @@
 package beego
 
 import (
-	"github.com/astaxie/beego/context"
+	"github.com/bismogojek/beego/context"
 )
 
 // GlobalDocAPI store the swagger api documents

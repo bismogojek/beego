@@ -20,9 +20,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/astaxie/beego/config"
-	"github.com/astaxie/beego/session"
-	"github.com/astaxie/beego/utils"
+	"github.com/bismogojek/beego/config"
+	"github.com/bismogojek/beego/session"
+	"github.com/bismogojek/beego/utils"
 )
 
 // Config is the main struct for BConfig
