@@ -121,7 +121,7 @@ func init() {
 
 	BConfig = &Config{
 		AppName:             "beego",
-		RunMode:             DEV,
+		RunMode:             PROD,
 		RouterCaseSensitive: true,
 		ServerName:          "beegoServer:" + VERSION,
 		RecoverPanic:        true,
