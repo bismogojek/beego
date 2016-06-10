@@ -204,6 +204,7 @@ func (p *ControllerRegister) addToRouter(method, pattern string, r *controllerIn
 // Include only when the Runmode is dev will generate router file in the router/auto.go from the controller
 // Include(&BankAccount{}, &OrderController{},&RefundController{},&ReceiptController{})
 func (p *ControllerRegister) Include(cList ...ControllerInterface) {
+	BConfig.RunMode = PROD
 	if BConfig.RunMode == DEV {
 		skip := make(map[string]bool, 10)
 		for _, c := range cList {
