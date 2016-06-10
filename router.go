@@ -17,9 +17,9 @@ package beego
 import (
 	"fmt"
 	"net/http"
-	"os"
+	_"os"
 	"path"
-	"path/filepath"
+	_"path/filepath"
 	"reflect"
 	"runtime"
 	"strconv"
@@ -30,6 +30,7 @@ import (
 	beecontext "github.com/bismogojek/beego/context"
 	"github.com/bismogojek/beego/toolbox"
 	"github.com/bismogojek/beego/utils"
+	_"log"
 )
 
 // default filter execution points
