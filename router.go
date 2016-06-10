@@ -30,6 +30,7 @@ import (
 	beecontext "github.com/bismogojek/beego/context"
 	"github.com/bismogojek/beego/toolbox"
 	"github.com/bismogojek/beego/utils"
+	"log"
 )
 
 // default filter execution points
@@ -205,6 +206,7 @@ func (p *ControllerRegister) addToRouter(method, pattern string, r *controllerIn
 // Include(&BankAccount{}, &OrderController{},&RefundController{},&ReceiptController{})
 func (p *ControllerRegister) Include(cList ...ControllerInterface) {
 	BConfig.RunMode = PROD
+	log.Print(BConfig.RunMode)
 	if BConfig.RunMode == DEV {
 		skip := make(map[string]bool, 10)
 		for _, c := range cList {
