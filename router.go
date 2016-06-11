@@ -211,7 +211,7 @@ func (p *ControllerRegister) Include(cList ...ControllerInterface) {
 			t := reflect.Indirect(reflectVal).Type()
 			gopath := os.Getenv("GOPATH")
 			if gopath == "" {
-				panic("you are in dev mode. So please set gopath")
+				panic("you are in dev mode. So please set gopath. message by bismo")
 			}
 			pkgpath := ""
 
